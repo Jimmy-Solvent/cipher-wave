@@ -4,7 +4,7 @@ import {DotLottieReact} from "@lottiefiles/dotlottie-react";
 
 export default function BgLottie(){
     return <DotLottieReact
-        className="h-screen w-screen fixed inset-0 opacity-25 z-[-1]"
+        className="h-screen absolute inset-0 opacity-25 z-[-1]"
         src="/animations/animation-background.json"
         loop
         autoplay

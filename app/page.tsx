@@ -21,7 +21,7 @@ export default function Home() {
 
             <h3 className="text-center mx-5">
                 <p className="m-5">
-                    Cipher Wave stands at the forefront of Bitcoin and blockchain technology worldwide. Our
+                    Orama Capital Trust stands at the forefront of Bitcoin and blockchain technology worldwide. Our
                     innovative products and services lay the groundwork for the financial systems of tomorrow.
                 </p>
 
@@ -40,14 +40,14 @@ export default function Home() {
             </p>
 
             <TechCard
-                title={"Cipher Wave Mining"}
+                title={"Orama Capital Trust Mining"}
                 body={"Premium Bitcoin Mining Hosting"}
                 animation={"/animations/animation-mining.json"}
                 borderColor={"border-[#00f]"}
             />
 
             <TechCard
-                title={"Cipher Wave Satellite"}
+                title={"Orama Capital Trust Satellite"}
                 body={"Access Bitcoin offline"}
                 animation={"/animations/animation-earn.json"}
                 borderColor={"border-[#9ff]"}
@@ -106,9 +106,9 @@ export default function Home() {
                 </h2>
                 <ul>
                     <li className="mt-3">Liquid Network</li>
-                    <li className="mt-3">Cipher Wave Stream Finance</li>
-                    <li className="mt-3">Cipher Wave Stream Mining</li>
-                    <li className="mt-3">Cipher Wave Stream Satellite</li>
+                    <li className="mt-3">Orama Capital Trust Finance</li>
+                    <li className="mt-3">Orama Capital Trust Mining</li>
+                    <li className="mt-3">Orama Capital Trust Satellite</li>
                     <li className="mt-3">Core Lightning</li>
                 </ul>
             </div>
@@ -144,7 +144,7 @@ export default function Home() {
             </div>
 
             <p className="my-8 ms-4">
-                © 2024 CipherWave Stream Corporation Inc. <br/>
+                © 2024 OramaCapitalTrust Corporation Inc. <br/>
                 All rights reserved.
             </p>
         </>
