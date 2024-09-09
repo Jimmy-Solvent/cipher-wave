@@ -2,18 +2,22 @@
 
 import {DotLottieReact} from "@lottiefiles/dotlottie-react";
 import { BiRightArrowAlt } from "react-icons/bi";
+import {useEffect} from "react";
 export default function TechCard({title, body, animation, borderColor}: { title: string, body: string, animation: string, borderColor: string }) {
 
-    let thisElement: Element;
-    window.addEventListener(
-        "load",
-        (event) => {
-            thisElement = document.getElementById(title)!;
+    useEffect(() => {
+        window.addEventListener(
+            "load",
+            (event) => {
+                thisElement = document.getElementById(title)!;
 
-            createObserver();
-        },
-        false,
-    );
+                createObserver();
+            },
+            false,
+        );
+    })
+
+    let thisElement: Element;
 
     function createObserver() {
         let observer;
