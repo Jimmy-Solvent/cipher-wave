@@ -10,20 +10,16 @@ export default function TechCard({title, body, animation, borderColor}: {
     borderColor: string
 }) {
 
-    console.log('card is running...')
     let thisElement: Element;
 
     useEffect(() => {
-        console.log(`use effect is running... window is ${window}`)
 
         function setElementAndCreateObservers() {
-            console.log('window load listener called')
             thisElement = document.getElementById(title)!;
             createObserver();
         }
 
         if(document.readyState === "complete"){
-            console.log("document is already ready")
             setElementAndCreateObservers();
         } else {
             window.addEventListener(
@@ -36,50 +32,6 @@ export default function TechCard({title, body, animation, borderColor}: {
         }
     }, [])
 
-    //
-    // while(typeof window === "undefined"){
-    //     delay(300);
-    //     setTimeout(function() {
-    //
-    //     }, 500);
-    // }
-
-    // let attempts = 0;
-    //
-    // const delay = (delayInms: number) => {
-    //     return new Promise(resolve => setTimeout(resolve, delayInms));
-    // };
-    //
-    // let thisWindow = window;
-    // async function ensureWindow() {
-    //     while (typeof thisWindow === "undefined") {
-    //         attempts++
-    //         console.log(`this attempt ${attempts}`)
-    //         await delay(500);
-    //         thisWindow = window;
-    //     }
-    // }
-    //
-    // await ensureWindow();
-
-
-
-    // window.addEventListener(
-    //     "load",
-    //     (event) => {
-    //         console.log('window load listener called')
-    //         thisElement = document.getElementById(title)!;
-    //
-    //         createObserver();
-    //     },
-    //     false,
-    // );
-
-    // useEffect(() => {
-    //     const onLoad = () => {
-    //
-    //     }
-    // })
     function createObserver() {
         let observer;
 
@@ -96,9 +48,6 @@ export default function TechCard({title, body, animation, borderColor}: {
     function handleIntersect(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                let className = entry.target.className;
-                // entry.target.className = className + " techCardAnim";
-                // (entry.target as HTMLElement).style.top = "0";
                 (entry.target as HTMLElement).style.transform = "translateY(0)";
                 (entry.target as HTMLElement).style.opacity = "1";
             }

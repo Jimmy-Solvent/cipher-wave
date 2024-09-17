@@ -1,8 +1,8 @@
 import Image from "next/image";
-import {BiSolidUserPlus} from "react-icons/bi";
+import {BiMenu, BiSolidUserPlus} from "react-icons/bi";
+import {DotLottieReact} from "@lottiefiles/dotlottie-react";
 import BgLottie, {CipherLottie} from "@/app/ui/bg-lottie";
 import TechCard from "@/app/ui/tech-card";
-import Link from "next/link";
 
 export default function Home() {
     return (
@@ -89,10 +89,10 @@ export default function Home() {
                 className="mx-auto size-auto"
             />
 
-            <Link href="/dashboard/auth" className="flex items-center gap-2 p-4 mx-auto mt-16 w-min rounded-lg bg-[#5f52a7] hover:bg-[#332f50]">
+            <a href="" className="flex items-center gap-2 p-4 mx-auto mt-16 w-min rounded-lg bg-[#5f52a7] hover:bg-[#332f50]">
                 <BiSolidUserPlus className="fill-white"/>
                 <p className="text-white">Register</p>
-            </Link>
+            </a>
 
             <div className="mt-32 p-4">
                 <h2 className="font-bold border-b-2 mb-4 pb-1">
